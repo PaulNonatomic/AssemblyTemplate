@@ -1,0 +1,16 @@
+{
+    "name": "com.nonatomic.assembly-template.editor",
+    "rootNamespace": "AssemblyTemplate",
+    "references": [],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
