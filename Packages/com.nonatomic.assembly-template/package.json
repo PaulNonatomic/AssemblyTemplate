@@ -1,0 +1,22 @@
+{
+  "name": "com.nonatomic.assembly-template",
+  "displayName": "Assembly Template",
+  "version": "0.1.0-pre",
+  "description": "Create assemblies from a template",
+  "keywords": [
+    "Assembly",
+    "Template",
+    "unity"
+  ],
+  "repository" : {
+    "type" : "git",
+    "url" : "git@github.com:NonatomicTeam/AssemblyTemplate.git"
+  },
+  "author": {
+    "name" : "Nonatomic",
+    "email" : "paul@nonatomic.co.uk",
+    "url" : "https://nonatomic.co.uk"
+  },
+  "category": "Tools",
+  "type": "tool"
+}
