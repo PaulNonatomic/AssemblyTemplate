@@ -1,8 +1,0 @@
-<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
-    <ui:VisualElement style="padding-left: 5px; padding-right: 5px; padding-top: 5px; padding-bottom: 5px;">
-        <ui:TextField picking-mode="Ignore" label="Template Path" value="filler text" name="TemplatePath" />
-        <ui:TextField picking-mode="Ignore" label="Assembly Name" value="MyAsembly" text="MyAsembly" name="AssemblyName" />
-        <ui:TextField picking-mode="Ignore" label="Assembly Domain" value="com.mycompany.myassembly" text="com.mycompany.myassembly" name="AssemblyDomain" />
-        <ui:Button text="Generate" display-tooltip-when-elided="true" name="Generate" />
-    </ui:VisualElement>
-</ui:UXML>
