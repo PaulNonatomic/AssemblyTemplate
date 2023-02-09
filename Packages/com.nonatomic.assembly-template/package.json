@@ -18,5 +18,8 @@
     "url" : "https://nonatomic.co.uk"
   },
   "category": "Tools",
-  "type": "tool"
+  "type": "tool",
+  "dependencies" : {
+    "com.unity.nuget.newtonsoft-json": "3.0.2"
+  }
 }
