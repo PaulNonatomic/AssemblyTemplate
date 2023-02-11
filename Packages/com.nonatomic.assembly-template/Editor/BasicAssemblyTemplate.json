@@ -1,0 +1,146 @@
+{
+  "root" :{
+    "name": "{ASSEMBLY_NAME}",
+    "children": [
+      {
+        "name": "Editor",
+        "asmdef": {
+          "name": "{ASSEMBLY_DOMAIN}.editor",
+          "rootNamespace": "{ASSEMBLY_NAME}.Editor",
+          "references": [],
+          "includePlatforms": [
+            "Editor"
+          ],
+          "excludePlatforms": [],
+          "allowUnsafeCode": false,
+          "overrideReferences": true,
+          "precompiledReferences": [],
+          "autoReferenced": true,
+          "defineConstraints": [],
+          "versionDefines": [],
+          "noEngineReferences": false
+        },
+        "files": [
+          {
+            "name": "AssemblyAttrs.cs",
+            "content": "using System.Runtime.CompilerServices;\r\r[assembly: InternalsVisibleTo(\"{ASSEMBLY_NAME}.Tests.PlayMode\")]\n[assembly: InternalsVisibleTo(\"{ASSEMBLY_NAME}.Tests.EditMode\")]"
+          }
+        ]
+      },
+      {
+        "name": "Runtime",
+        "asmdef": {
+          "name": "{ASSEMBLY_DOMAIN}.runtime",
+          "rootNamespace": "{ASSEMBLY_NAME}",
+          "references": [],
+          "includePlatforms": [],
+          "excludePlatforms": [],
+          "allowUnsafeCode": false,
+          "overrideReferences": true,
+          "precompiledReferences": [],
+          "autoReferenced": true,
+          "defineConstraints": [],
+          "versionDefines": [],
+          "noEngineReferences": false
+        },
+        "files": [
+          {
+            "name": "AssemblyAttrs.cs",
+            "content": "using System.Runtime.CompilerServices;\r\r[assembly: InternalsVisibleTo(\"{ASSEMBLY_NAME}.Tests.PlayMode\")]\n[assembly: InternalsVisibleTo(\"{ASSEMBLY_NAME}.Tests.EditMode\")]\n[assembly: InternalsVisibleTo(\"{ASSEMBLY_NAME}.Editor\")]"
+          }
+        ]
+      },
+      {
+        "name": "Tests",
+        "children": [
+          {
+            "name": "EditMode",
+            "children": [],
+            "asmdef": {
+              "name": "{ASSEMBLY_DOMAIN}.tests.editmode",
+              "rootNamespace": "EditMode",
+              "references": [
+                "UnityEngine.TestRunner",
+                "UnityEditor.TestRunner"
+              ],
+              "includePlatforms": [
+                "Editor"
+              ],
+              "excludePlatforms": [],
+              "allowUnsafeCode": false,
+              "overrideReferences": true,
+              "precompiledReferences": [
+                "nunit.framework.dll"
+              ],
+              "autoReferenced": true,
+              "defineConstraints": [
+                "UNITY_INCLUDE_TESTS"
+              ],
+              "versionDefines": [],
+              "noEngineReferences": false
+            }
+          },
+          {
+            "name": "PlayMode",
+            "children": [],
+            "asmdef": {
+              "name": "{ASSEMBLY_DOMAIN}.tests.playmode",
+              "rootNamespace": "PlayMode",
+              "references": [
+                "UnityEngine.TestRunner"
+              ],
+              "includePlatforms": [],
+              "excludePlatforms": [],
+              "allowUnsafeCode": false,
+              "overrideReferences": true,
+              "precompiledReferences": [
+                "nunit.framework.dll"
+              ],
+              "autoReferenced": false,
+              "defineConstraints": [
+                "UNITY_INCLUDE_TESTS"
+              ],
+              "versionDefines": [],
+              "noEngineReferences": false
+            }
+          }
+        ],
+        "asmdef": {
+          "name": "{ASSEMBLY_DOMAIN}.tests",
+          "rootNamespace": "Tests",
+          "references": [
+            "UnityEngine.TestRunner",
+            "UnityEditor.TestRunner"
+          ],
+          "includePlatforms": [],
+          "excludePlatforms": [],
+          "allowUnsafeCode": false,
+          "overrideReferences": true,
+          "precompiledReferences": [
+            "nunit.framework.dll"
+          ],
+          "autoReferenced": true,
+          "defineConstraints": [
+            "UNITY_INCLUDE_TESTS"
+          ],
+          "versionDefines": [],
+          "noEngineReferences": false
+        }
+      }
+    ],
+    "asmdef": {
+      "name": "{ASSEMBLY_DOMAIN}",
+      "rootNamespace": "{ASSEMBLY_NAME}",
+      "references": [],
+      "includePlatforms": [],
+      "excludePlatforms": [],
+      "allowUnsafeCode": false,
+      "overrideReferences": true,
+      "precompiledReferences": [],
+      "autoReferenced": true,
+      "defineConstraints": [],
+      "versionDefines": [],
+      "noEngineReferences": false
+    }
+  }
+}
