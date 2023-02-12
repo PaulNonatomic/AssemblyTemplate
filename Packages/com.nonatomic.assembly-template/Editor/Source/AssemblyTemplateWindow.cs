@@ -12,7 +12,7 @@ namespace AssemblyTemplate.Editor
 		private VisualTreeAsset _tree;
 		
 		[SerializeField]
-		private string _templatePath = "Packages/com.nonatomic.assembly-template/Editor/AssemblyTemplate.json";
+		private string _templatePath = "Packages/com.nonatomic.assembly-template/Editor/BasicAssemblyTemplate.json";
 
 		private DirectoryStructureTemplateSO _template;
 		private TextField _templatePathField;
