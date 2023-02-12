@@ -6,4 +6,4 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/) a
 - split the existing template into two variants: `BasicAssemblyTemplate` and `GameAssemblyTemplate` with the later including some sub folder organisation.
 
 ## [0.1.0-preview.1] - 2023-02-08
-- initial package version
+- initial package version[manifest.json](..%2Fmanifest.json)
