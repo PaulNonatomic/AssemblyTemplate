@@ -1,12 +1,12 @@
 {
   "root" :{
-    "name": "{ASSEMBLY_NAME}",
+    "name": "{{ASSEMBLY_NAME}}",
     "children": [
       {
         "name": "Editor",
         "asmdef": {
-          "name": "{ASSEMBLY_DOMAIN}.editor",
-          "rootNamespace": "{ASSEMBLY_NAME}.Editor",
+          "name": "{{ASSEMBLY_DOMAIN}}.editor",
+          "rootNamespace": "{{ASSEMBLY_NAME}}.Editor",
           "references": [],
           "includePlatforms": [
             "Editor"
@@ -23,15 +23,15 @@
         "files": [
           {
             "name": "AssemblyAttrs.cs",
-            "content": "using System.Runtime.CompilerServices;\r\r[assembly: InternalsVisibleTo(\"{ASSEMBLY_NAME}.Tests.PlayMode\")]\n[assembly: InternalsVisibleTo(\"{ASSEMBLY_NAME}.Tests.EditMode\")]"
+            "content": "using System.Runtime.CompilerServices;\r\r[assembly: InternalsVisibleTo(\"{{ASSEMBLY_NAME}}.Tests.PlayMode\")]\n[assembly: InternalsVisibleTo(\"{{ASSEMBLY_NAME}}.Tests.EditMode\")]"
           }
         ]
       },
       {
         "name": "Runtime",
         "asmdef": {
-          "name": "{ASSEMBLY_DOMAIN}.runtime",
-          "rootNamespace": "{ASSEMBLY_NAME}",
+          "name": "{{ASSEMBLY_DOMAIN}}.runtime",
+          "rootNamespace": "{{ASSEMBLY_NAME}}",
           "references": [],
           "includePlatforms": [],
           "excludePlatforms": [],
@@ -46,7 +46,7 @@
         "files": [
           {
             "name": "AssemblyAttrs.cs",
-            "content": "using System.Runtime.CompilerServices;\r\r[assembly: InternalsVisibleTo(\"{ASSEMBLY_NAME}.Tests.PlayMode\")]\n[assembly: InternalsVisibleTo(\"{ASSEMBLY_NAME}.Tests.EditMode\")]\n[assembly: InternalsVisibleTo(\"{ASSEMBLY_NAME}.Editor\")]"
+            "content": "using System.Runtime.CompilerServices;\r\r[assembly: InternalsVisibleTo(\"{{ASSEMBLY_NAME}}.Tests.PlayMode\")]\n[assembly: InternalsVisibleTo(\"{{ASSEMBLY_NAME}}.Tests.EditMode\")]\n[assembly: InternalsVisibleTo(\"{{ASSEMBLY_NAME}}.Editor\")]"
           }
         ]
       },
@@ -57,7 +57,7 @@
             "name": "EditMode",
             "children": [],
             "asmdef": {
-              "name": "{ASSEMBLY_DOMAIN}.tests.editmode",
+              "name": "{{ASSEMBLY_DOMAIN}}.tests.editmode",
               "rootNamespace": "EditMode",
               "references": [
                 "UnityEngine.TestRunner",
@@ -84,7 +84,7 @@
             "name": "PlayMode",
             "children": [],
             "asmdef": {
-              "name": "{ASSEMBLY_DOMAIN}.tests.playmode",
+              "name": "{{ASSEMBLY_DOMAIN}}.tests.playmode",
               "rootNamespace": "PlayMode",
               "references": [
                 "UnityEngine.TestRunner"
@@ -106,7 +106,7 @@
           }
         ],
         "asmdef": {
-          "name": "{ASSEMBLY_DOMAIN}.tests",
+          "name": "{{ASSEMBLY_DOMAIN}}.tests",
           "rootNamespace": "Tests",
           "references": [
             "UnityEngine.TestRunner",
@@ -129,8 +129,8 @@
       }
     ],
     "asmdef": {
-      "name": "{ASSEMBLY_DOMAIN}",
-      "rootNamespace": "{ASSEMBLY_NAME}",
+      "name": "{{ASSEMBLY_DOMAIN}}",
+      "rootNamespace": "{{ASSEMBLY_NAME}}",
       "references": [],
       "includePlatforms": [],
       "excludePlatforms": [],

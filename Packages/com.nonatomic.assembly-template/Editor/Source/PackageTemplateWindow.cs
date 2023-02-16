@@ -1,4 +1,5 @@
-﻿using System.IO;
+﻿using System;
+using System.IO;
 using Newtonsoft.Json;
 using UnityEditor;
 using UnityEngine;
@@ -6,30 +7,46 @@ using UnityEngine.UIElements;
 
 namespace AssemblyTemplate.Editor
 {
-	public class AssemblyTemplateWindow : EditorWindow
+	public class PackageTemplateWindow : EditorWindow
 	{
 		[SerializeField] 
 		private VisualTreeAsset _tree;
 		
 		[SerializeField]
-		private string _templatePath = "Packages/com.nonatomic.assembly-template/Editor/BasicAssemblyTemplate.json";
+		private string _templatePath = "Packages/com.nonatomic.assembly-template/Editor/NewPackageTemplate.json";
 
 		private DirectoryStructureTemplateSO _template;
 		private TextField _templatePathField;
-		private TextField _assemblyNameField;
-		private TextField _assemblyDomainField;
+		private TextField _packageNameField;
+		private TextField _packageDomainField;
 		private Button _generateButton;
 
-		private static AssemblyTemplateWindow _window;
+		private static PackageTemplateWindow _window;
+		private TextField _packageVersionField;
+		private TextField _authorNameField;
+		private TextField _authorEmail;
+		private TextField _authorUrl;
+		private TextField _packageType;
+		private TextField _packageDescription;
+		private TextField _packageRepo;
 
+		private const string PackageNameKey = "{{PACKAGE_NAME}}";
+		private const string PackageDomainKey = "{{PACKAGE_DOMAIN}}";
+		private const string PackageVersionKey = "{{PACKAGE_VERSION}}";
+		private const string PackageDescriptionKey = "{{PACKAGE_DESCRIPTION}}";
+		private const string PackageRepoKey = "{{PACKAGE_REPO}}";
 		private const string AssemblyNameKey = "{{ASSEMBLY_NAME}}";
 		private const string AssemblyDomainKey = "{{ASSEMBLY_DOMAIN}}";
+		private const string DateKey = "{{DATE}}";
+		private const string AuthorNameKey = "{{AUTHOR_NAME}}";
+		private const string AuthorEmailKey = "{{AUTHOR_EMAIL}}";
+		private const string AuthorUrlKey = "{{AUTHOR_URL}}";
 
-		[MenuItem("Assets/Create/Assembly Structure", false, 100)]
+		[MenuItem("Assets/Create/New Package", false, 100)]
 		public static void ShowEditor()
 		{
-			_window = GetWindow<AssemblyTemplateWindow>();
-			_window.titleContent = new GUIContent("Assembly Template");
+			_window = GetWindow<PackageTemplateWindow>();
+			_window.titleContent = new GUIContent("Package Template");
 		}
 
 		private void CreateGUI()
@@ -45,8 +62,15 @@ namespace AssemblyTemplate.Editor
 			_templatePathField = rootVisualElement.Q<TextField>("TemplatePath");
 			_templatePathField.value = _templatePath;
 				
-			_assemblyNameField = rootVisualElement.Q<TextField>("AssemblyNameKey");
-			_assemblyDomainField = rootVisualElement.Q<TextField>("AssemblyDomainKey");
+			_packageNameField = rootVisualElement.Q<TextField>("PackageName");
+			_packageDomainField = rootVisualElement.Q<TextField>("PackageDomain");
+			_packageVersionField = rootVisualElement.Q<TextField>("PackageVersion");
+			_packageDescription = rootVisualElement.Q<TextField>("PackageDescription");
+			_packageRepo = rootVisualElement.Q<TextField>("PackageRepo");
+			
+			_authorNameField = rootVisualElement.Q<TextField>("AuthorName");
+			_authorEmail = rootVisualElement.Q<TextField>("AuthorEmail");
+			_authorUrl = rootVisualElement.Q<TextField>("AuthorUrl");
 		}
 
 		private void InitButtons()
@@ -73,8 +97,7 @@ namespace AssemblyTemplate.Editor
 
 		private void ProcessTemplate()
 		{
-			var selectedDirectory = AssetDatabase.GetAssetPath(Selection.activeObject);
-			if (!AssetDatabase.IsValidFolder(selectedDirectory)) return;
+			var selectedDirectory = Path.GetFullPath("Packages/");
 			
 			CreateRecursiveSubDirectories(selectedDirectory, _template.Root);
 		}
@@ -98,8 +121,22 @@ namespace AssemblyTemplate.Editor
 
 		private string ProcessName(string value)
 		{
-			value = value.Replace(AssemblyNameKey, _assemblyNameField.value);
-			value = value.Replace(AssemblyDomainKey, _assemblyDomainField.value);
+			value = value.Replace(PackageNameKey, _packageNameField.value);
+			value = value.Replace(PackageDomainKey, _packageDomainField.value);
+			value = value.Replace(PackageVersionKey, _packageVersionField.value);
+			value = value.Replace(PackageDescriptionKey, _packageDescription.value);
+			value = value.Replace(PackageRepoKey, _packageRepo.value);
+			
+			value = value.Replace(AssemblyNameKey, _packageNameField.value);
+			value = value.Replace(AssemblyDomainKey, _packageDomainField.value);
+			
+			value = value.Replace(AuthorEmailKey, _authorEmail.value);
+			value = value.Replace(AuthorNameKey, _authorNameField.value);
+			value = value.Replace(AuthorUrlKey, _authorUrl.value);
+
+			var dateString = DateTime.Now.ToString("yyyy-MM-dd");
+			value = value.Replace(DateKey, dateString);
+			
 
 			return value;
 		}
@@ -120,8 +157,9 @@ namespace AssemblyTemplate.Editor
 
 		private string CreateDirectory(string path, string name)
 		{
-			var guid = AssetDatabase.CreateFolder(path, name);
-			return AssetDatabase.GUIDToAssetPath(guid);
+			var fullPath = Path.Combine(path, name);
+			var guid = Directory.CreateDirectory(fullPath);
+			return fullPath;
 		}
 
 		private void CreateAsmdefFile(string path, DirectoryTemplate directory)
