@@ -1,7 +1,7 @@
 {
   "name": "com.nonatomic.assembly-template",
   "displayName": "Assembly Template",
-  "version": "0.1.1-pre",
+  "version": "0.1.2",
   "description": "Create assemblies from a template",
   "keywords": [
     "Assembly",
@@ -17,8 +17,6 @@
     "email" : "paul@nonatomic.co.uk",
     "url" : "https://nonatomic.co.uk"
   },
-  "category": "Tools",
-  "type": "tool",
   "dependencies" : {
     "com.unity.nuget.newtonsoft-json": "3.0.2"
   }

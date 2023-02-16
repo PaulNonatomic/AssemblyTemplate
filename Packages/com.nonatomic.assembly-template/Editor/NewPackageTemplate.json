@@ -1,45 +1,9 @@
 {
   "root" :{
-    "name": "{{ASSEMBLY_NAME}}",
+    "name": "{{PACKAGE_DOMAIN}}",
     "children": [
       {
         "name": "Editor",
-        "children": [
-          {
-            "name" : "Source"
-          },
-          {
-            "name" : "Content",
-            "children": [
-              {
-                "name" : "Config"
-              },
-              {
-                "name" : "Scenes"
-              },
-              {
-                "name" : "Prefabs"
-              },
-              {
-                "name" : "Art",
-                "children": [
-                  {
-                    "name" : "Textures"
-                  },
-                  {
-                    "name" : "Materials"
-                  },
-                  {
-                    "name" : "Shaders"
-                  },
-                  {
-                    "name" : "Animation"
-                  }
-                ]
-              }
-            ]
-          }
-        ],
         "asmdef": {
           "name": "{{ASSEMBLY_DOMAIN}}.editor",
           "rootNamespace": "{{ASSEMBLY_NAME}}.Editor",
@@ -59,48 +23,12 @@
         "files": [
           {
             "name": "AssemblyAttrs.cs",
-            "content": "using System.Runtime.CompilerServices;\r\r[assembly: InternalsVisibleTo(\"{ASSEMBLY_NAME}.Tests.PlayMode\")]\n[assembly: InternalsVisibleTo(\"{ASSEMBLY_NAME}.Tests.EditMode\")]"
+            "content": "using System.Runtime.CompilerServices;\r\r[assembly: InternalsVisibleTo(\"{{ASSEMBLY_NAME}}.Tests.PlayMode\")]\n[assembly: InternalsVisibleTo(\"{{ASSEMBLY_NAME}}.Tests.EditMode\")]"
           }
         ]
       },
       {
         "name": "Runtime",
-        "children": [
-          {
-            "name" : "Source"
-          },
-          {
-            "name" : "Content",
-            "children": [
-              {
-                "name" : "Config"
-              },
-              {
-                "name" : "Scenes"
-              },
-              {
-                "name" : "Prefabs"
-              },
-              {
-                "name" : "Art",
-                "children": [
-                  {
-                    "name" : "Textures"
-                  },
-                  {
-                    "name" : "Materials"
-                  },
-                  {
-                    "name" : "Shaders"
-                  },
-                  {
-                    "name" : "Animation"
-                  }
-                ]
-              }
-            ]
-          }
-        ],
         "asmdef": {
           "name": "{{ASSEMBLY_DOMAIN}}.runtime",
           "rootNamespace": "{{ASSEMBLY_NAME}}",
@@ -200,19 +128,15 @@
         }
       }
     ],
-    "asmdef": {
-      "name": "{{ASSEMBLY_DOMAIN}}",
-      "rootNamespace": "{{ASSEMBLY_NAME}}",
-      "references": [],
-      "includePlatforms": [],
-      "excludePlatforms": [],
-      "allowUnsafeCode": false,
-      "overrideReferences": true,
-      "precompiledReferences": [],
-      "autoReferenced": true,
-      "defineConstraints": [],
-      "versionDefines": [],
-      "noEngineReferences": false
-    }
+    "files": [
+      {
+        "name": "Changelog.md",
+        "content": "# Changelog\nAll notable changes to this package will be documented in this file.\n\n## [{{PACKAGE_VERSION}}] - {{DATE}}\n- initial package setup"
+      },
+      {
+        "name": "package.json",
+        "content": "{\n  \"name\": \"{{PACKAGE_DOMAIN}}\",\n  \"displayName\": \"{{PACKAGE_NAME}}\",\n  \"version\": \"{{PACKAGE_VERSION}}\",\n  \"description\": \"{{PACKAGE_DESCRIPTION}}\",\n  \"keywords\": [\n    \"unity\"\n  ],\n  \"repository\" : {\n    \"type\" : \"git\",\n    \"url\" : \"{{PACKAGE_REPO}}\"\n  },\n  \"author\": {\n    \"name\" : \"{{AUTHOR_NAME}}\",\n    \"email\" : \"{{AUTHOR_EMAIL}}\",\n    \"url\" : \"{{AUTHOR_URL}}\"\n  },\n  \"dependencies\" : {\n    \n  }\n}"
+      }
+    ]
   }
 }
