@@ -26,3 +26,4 @@ Complete the form in the Package Template window and select `Generate` to create
 ![Unity_d8S6UpjXF5](https://user-images.githubusercontent.com/4581647/219514874-838f323e-928c-42b1-bb2c-d433c274e8dc.png)
 
 Should you wish to customise this file structure you can do so by duplicating the NewPackageTemplate.json file and editing it to your liking. You can then set the `Template Path` field of the Package Template window to point to your new json template.
+[manifest.json](..%2FPackagePlayground%2FPackages%2Fmanifest.json)[manifest.json](..%2FPackagePlayground%2FPackages%2Fmanifest.json)

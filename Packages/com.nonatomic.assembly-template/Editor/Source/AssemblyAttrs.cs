@@ -1,0 +1,1 @@
+using System.Runtime.CompilerServices;[assembly: InternalsVisibleTo("AssemblyTemplate.Tests.PlayMode")][assembly: InternalsVisibleTo("AssemblyTemplate.Tests.EditMode")]

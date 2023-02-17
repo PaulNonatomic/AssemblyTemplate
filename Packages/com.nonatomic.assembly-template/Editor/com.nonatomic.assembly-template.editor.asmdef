@@ -1,6 +1,6 @@
 {
     "name": "com.nonatomic.assembly-template.editor",
-    "rootNamespace": "AssemblyTemplate",
+    "rootNamespace": "AssemblyTemplate.Tests.Editor",
     "references": [],
     "includePlatforms": [
         "Editor"

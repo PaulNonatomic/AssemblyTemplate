@@ -107,7 +107,7 @@
         ],
         "asmdef": {
           "name": "{{ASSEMBLY_DOMAIN}}.tests",
-          "rootNamespace": "Tests",
+          "rootNamespace": "{{ASSEMBLY_NAME}}.Tests",
           "references": [
             "UnityEngine.TestRunner",
             "UnityEditor.TestRunner"
