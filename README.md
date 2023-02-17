@@ -1,5 +1,5 @@
 # Project Background
-This started out as a little project to simplify and speed up the process of creating a new assembly as they follow as pretty consistent pattern. 
+This started out as a little project to simplify and speed up the process of creating a new assembly within the Unity Editor as they follow as pretty consistent pattern. 
 
 To achieve this I built a simple process of digesting json files to produce file structures in Unity. This process it seems has further application in the generation of any commonly used file structure like that of creating new packages, so I've expanded the project to automate the generation of a new packages file structure and required files.
 
