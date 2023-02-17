@@ -17,7 +17,7 @@ The produced file structure is inclusive of all the typical files you would expe
 Should you wish to customise this file structure you can do so by duplicating the BasicAssemblyTemplate.json file and editing it to your liking. You can then set the `Template Path` field of the Assembly Template window to point to your new json template.
 
 # Package Template
-To create a new package right click in the project window and select `Create > Package Structure`.
+To create a new package right click in the project window and select `Create > New Package`.
 
 ![Unity_1Fp6aI0jh4](https://user-images.githubusercontent.com/4581647/219514581-65f16a2b-3284-4879-8e89-5669cc23328b.png)
 
