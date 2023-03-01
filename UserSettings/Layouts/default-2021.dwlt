@@ -86,16 +86,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_PixelRect:
     serializedVersion: 2
-    x: 8
-    y: 51
-    width: 3424
-    height: 1333
+    x: 0
+    y: 43
+    width: 3440
+    height: 1349
   m_ShowMode: 4
-  m_Title: Console
+  m_Title: Inspector
   m_RootView: {fileID: 10}
   m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
-  m_Maximized: 0
+  m_Maximized: 1
 --- !u!114 &5
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -180,12 +180,12 @@ MonoBehaviour:
   m_Children: []
   m_Position:
     serializedVersion: 2
-    x: 1612
+    x: 1619
     y: 0
-    width: 524
-    height: 512
-  m_MinSize: {x: 102, y: 121}
-  m_MaxSize: {x: 4002, y: 4021}
+    width: 527
+    height: 519
+  m_MinSize: {x: 100, y: 100}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 24}
   m_Panes:
   - {fileID: 24}
@@ -209,12 +209,12 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 30
-    width: 3424
-    height: 1283
+    width: 3440
+    height: 1299
   m_MinSize: {x: 500, y: 200}
   m_MaxSize: {x: 40480, y: 16192}
   vertical: 1
-  controlID: 52
+  controlID: 217
 --- !u!114 &10
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -235,8 +235,8 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 3424
-    height: 1333
+    width: 3440
+    height: 1349
   m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
   m_UseTopView: 1
@@ -260,7 +260,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 3424
+    width: 3440
     height: 30
   m_MinSize: {x: 0, y: 0}
   m_MaxSize: {x: 0, y: 0}
@@ -281,8 +281,8 @@ MonoBehaviour:
   m_Position:
     serializedVersion: 2
     x: 0
-    y: 1313
-    width: 3424
+    y: 1329
+    width: 3440
     height: 20
   m_MinSize: {x: 0, y: 0}
   m_MaxSize: {x: 0, y: 0}
@@ -305,12 +305,12 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 3424
-    height: 1283
+    width: 3440
+    height: 1299
   m_MinSize: {x: 500, y: 200}
   m_MaxSize: {x: 40480, y: 16192}
   vertical: 0
-  controlID: 53
+  controlID: 218
 --- !u!114 &14
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -330,12 +330,12 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 2136
-    height: 1283
+    width: 2146
+    height: 1299
   m_MinSize: {x: 400, y: 200}
   m_MaxSize: {x: 32384, y: 16192}
   vertical: 1
-  controlID: 260
+  controlID: 261
 --- !u!114 &15
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -355,12 +355,12 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 2136
-    height: 771
+    width: 2146
+    height: 780
   m_MinSize: {x: 200, y: 100}
   m_MaxSize: {x: 16192, y: 8096}
   vertical: 0
-  controlID: 261
+  controlID: 262
 --- !u!114 &16
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -378,8 +378,8 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 986
-    height: 771
+    width: 991
+    height: 780
   m_MinSize: {x: 201, y: 221}
   m_MaxSize: {x: 4001, y: 4021}
   m_ActualView: {fileID: 26}
@@ -402,10 +402,10 @@ MonoBehaviour:
   m_Children: []
   m_Position:
     serializedVersion: 2
-    x: 986
+    x: 991
     y: 0
-    width: 1150
-    height: 771
+    width: 1155
+    height: 780
   m_MinSize: {x: 202, y: 221}
   m_MaxSize: {x: 4002, y: 4021}
   m_ActualView: {fileID: 23}
@@ -436,13 +436,13 @@ MonoBehaviour:
   m_Position:
     serializedVersion: 2
     x: 0
-    y: 771
-    width: 2136
-    height: 512
+    y: 780
+    width: 2146
+    height: 519
   m_MinSize: {x: 400, y: 100}
   m_MaxSize: {x: 32384, y: 8096}
   vertical: 0
-  controlID: 21
+  controlID: 50
 --- !u!114 &19
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -460,8 +460,8 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 470
-    height: 512
+    width: 1069
+    height: 519
   m_MinSize: {x: 231, y: 271}
   m_MaxSize: {x: 10001, y: 10021}
   m_ActualView: {fileID: 30}
@@ -484,10 +484,10 @@ MonoBehaviour:
   m_Children: []
   m_Position:
     serializedVersion: 2
-    x: 470
+    x: 1069
     y: 0
-    width: 291
-    height: 512
+    width: 200
+    height: 519
   m_MinSize: {x: 202, y: 221}
   m_MaxSize: {x: 4002, y: 4021}
   m_ActualView: {fileID: 31}
@@ -510,12 +510,12 @@ MonoBehaviour:
   m_Children: []
   m_Position:
     serializedVersion: 2
-    x: 761
+    x: 1269
     y: 0
-    width: 851
-    height: 512
-  m_MinSize: {x: 102, y: 121}
-  m_MaxSize: {x: 4002, y: 4021}
+    width: 350
+    height: 519
+  m_MinSize: {x: 100, y: 100}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 33}
   m_Panes:
   - {fileID: 33}
@@ -539,12 +539,12 @@ MonoBehaviour:
   m_Children: []
   m_Position:
     serializedVersion: 2
-    x: 2136
+    x: 2146
     y: 0
-    width: 1288
-    height: 1283
-  m_MinSize: {x: 276, y: 71}
-  m_MaxSize: {x: 4001, y: 4021}
+    width: 1294
+    height: 1299
+  m_MinSize: {x: 275, y: 50}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 35}
   m_Panes:
   - {fileID: 35}
@@ -573,10 +573,10 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 994
-    y: 81
-    width: 1148
-    height: 750
+    x: 991
+    y: 73
+    width: 1153
+    height: 759
   m_ViewDataDictionary: {fileID: 0}
   m_OverlayCanvas:
     m_LastAppliedPresetName: Default
@@ -601,20 +601,20 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 1620
-    y: 852
-    width: 522
-    height: 491
+    x: 1619
+    y: 853
+    width: 525
+    height: 498
   m_ViewDataDictionary: {fileID: 0}
   m_OverlayCanvas:
     m_LastAppliedPresetName: Default
     m_SaveData: []
   m_Spl:
-    ID: 266
+    ID: 267
     splitterInitialOffset: 0
     currentActiveSplitter: -1
     realSizes:
-    - 391
+    - 394
     - 131
     relativeSizes:
     - 0.75
@@ -625,7 +625,7 @@ MonoBehaviour:
     maxSizes:
     - 0
     - 0
-    lastTotalSize: 522
+    lastTotalSize: 525
     splitSize: 6
     xOffset: 0
     m_Version: 1
@@ -635,15 +635,31 @@ MonoBehaviour:
     oldSplitSize: 0
   m_TestTypeToolbarIndex: 1
   m_PlayModeTestListGUI:
-    m_Window: {fileID: 0}
-    m_NewResultList: []
+    m_Window: {fileID: 24}
+    m_NewResultList:
+    - id: 1004
+      uniqueId: '[AssemblyTemplate][suite]'
+      name: AssemblyTemplate
+      fullName: AssemblyTemplate
+      resultStatus: 0
+      duration: 0
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 
+      parentUniqueId: 
     m_ResultText: 
     m_ResultStacktrace: 
     m_TestListState:
       scrollPos: {x: 0, y: 0}
       m_SelectedIDs: 
       m_LastClickedID: 0
-      m_ExpandedIDs: 
+      m_ExpandedIDs: 0e719a66ffffff7f
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -667,7 +683,8 @@ MonoBehaviour:
       NotRunHidden: 0
       m_SearchString: 
       selectedCategoryMask: 0
-      availableCategories: []
+      availableCategories:
+      - Uncategorized
     m_SelectedOption: 0
   m_EditModeTestListGUI:
     m_Window: {fileID: 24}
@@ -676,8 +693,8 @@ MonoBehaviour:
       uniqueId: '[AssemblyTemplate][suite]'
       name: AssemblyTemplate
       fullName: AssemblyTemplate
-      resultStatus: 0
-      duration: 0
+      resultStatus: 1
+      duration: 0.1116759
       messages: 
       output: 
       stacktrace: 
@@ -688,13 +705,153 @@ MonoBehaviour:
       categories: []
       parentId: 
       parentUniqueId: 
-    m_ResultText: 
+    - id: 1003
+      uniqueId: '[com.nonatomic.assembly-template.tests.editmode.dll][suite]'
+      name: com.nonatomic.assembly-template.tests.editmode.dll
+      fullName: D:/Repos/AssemblyTemplate/Library/ScriptAssemblies/com.nonatomic.assembly-template.tests.editmode.dll
+      resultStatus: 1
+      duration: 0.0990453
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1000
+      parentUniqueId: '[AssemblyTemplate][suite]'
+    - id: 1004
+      uniqueId: com.nonatomic.assembly-template.tests.editmode.dll/[AssemblyTemplate][suite]
+      name: AssemblyTemplate
+      fullName: AssemblyTemplate
+      resultStatus: 1
+      duration: 0.098661
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1003
+      parentUniqueId: '[com.nonatomic.assembly-template.tests.editmode.dll][suite]'
+    - id: 1005
+      uniqueId: com.nonatomic.assembly-template.tests.editmode.dll/AssemblyTemplate/[Tests][suite]
+      name: Tests
+      fullName: AssemblyTemplate.Tests
+      resultStatus: 1
+      duration: 0.098457
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1004
+      parentUniqueId: com.nonatomic.assembly-template.tests.editmode.dll/[AssemblyTemplate][suite]
+    - id: 1006
+      uniqueId: com.nonatomic.assembly-template.tests.editmode.dll/AssemblyTemplate/Tests/[com.nonatomic.assembly-template.tests.editmode][AssemblyTemplate.Tests.EditMode][suite]
+      name: EditMode
+      fullName: AssemblyTemplate.Tests.EditMode
+      resultStatus: 1
+      duration: 0.0982026
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1005
+      parentUniqueId: com.nonatomic.assembly-template.tests.editmode.dll/AssemblyTemplate/[Tests][suite]
+    - id: 1001
+      uniqueId: com.nonatomic.assembly-template.tests.editmode.dll/AssemblyTemplate/Tests/EditMode/[com.nonatomic.assembly-template.tests.editmode][AssemblyTemplate.Tests.EditMode.TemplateDeserializationTests][suite]
+      name: TemplateDeserializationTests
+      fullName: AssemblyTemplate.Tests.EditMode.TemplateDeserializationTests
+      resultStatus: 1
+      duration: 0.0971194
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1006
+      parentUniqueId: com.nonatomic.assembly-template.tests.editmode.dll/AssemblyTemplate/Tests/[com.nonatomic.assembly-template.tests.editmode][AssemblyTemplate.Tests.EditMode][suite]
+    - id: 1002
+      uniqueId: com.nonatomic.assembly-template.tests.editmode.dll/AssemblyTemplate/Tests/EditMode/TemplateDeserializationTests/[com.nonatomic.assembly-template.tests.editmode][AssemblyTemplate.Tests.EditMode.TemplateDeserializationTests.Deserialize_The_Assembly_Template]
+      name: Deserialize_The_Assembly_Template
+      fullName: AssemblyTemplate.Tests.EditMode.TemplateDeserializationTests.Deserialize_The_Assembly_Template
+      resultStatus: 1
+      duration: 0.0815602
+      messages: 
+      output: 'AssemblyTemplate.Editor.DirectoryStructureTemplateSO must be instantiated
+        using the ScriptableObject.CreateInstance method instead of new DirectoryStructureTemplateSO.
+
+'
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1001
+      parentUniqueId: com.nonatomic.assembly-template.tests.editmode.dll/AssemblyTemplate/Tests/EditMode/[com.nonatomic.assembly-template.tests.editmode][AssemblyTemplate.Tests.EditMode.TemplateDeserializationTests][suite]
+    - id: 1003
+      uniqueId: com.nonatomic.assembly-template.tests.editmode.dll/AssemblyTemplate/Tests/EditMode/TemplateDeserializationTests/[com.nonatomic.assembly-template.tests.editmode][AssemblyTemplate.Tests.EditMode.TemplateDeserializationTests.Deserialize_The_Game_Template]
+      name: Deserialize_The_Game_Template
+      fullName: AssemblyTemplate.Tests.EditMode.TemplateDeserializationTests.Deserialize_The_Game_Template
+      resultStatus: 1
+      duration: 0.0018159
+      messages: 
+      output: 'AssemblyTemplate.Editor.DirectoryStructureTemplateSO must be instantiated
+        using the ScriptableObject.CreateInstance method instead of new DirectoryStructureTemplateSO.
+
+'
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1001
+      parentUniqueId: com.nonatomic.assembly-template.tests.editmode.dll/AssemblyTemplate/Tests/EditMode/[com.nonatomic.assembly-template.tests.editmode][AssemblyTemplate.Tests.EditMode.TemplateDeserializationTests][suite]
+    - id: 1004
+      uniqueId: com.nonatomic.assembly-template.tests.editmode.dll/AssemblyTemplate/Tests/EditMode/TemplateDeserializationTests/[com.nonatomic.assembly-template.tests.editmode][AssemblyTemplate.Tests.EditMode.TemplateDeserializationTests.Deserialize_The_Package_Template]
+      name: Deserialize_The_Package_Template
+      fullName: AssemblyTemplate.Tests.EditMode.TemplateDeserializationTests.Deserialize_The_Package_Template
+      resultStatus: 1
+      duration: 0.0016021
+      messages: 
+      output: 'AssemblyTemplate.Editor.DirectoryStructureTemplateSO must be instantiated
+        using the ScriptableObject.CreateInstance method instead of new DirectoryStructureTemplateSO.
+
+'
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1001
+      parentUniqueId: com.nonatomic.assembly-template.tests.editmode.dll/AssemblyTemplate/Tests/EditMode/[com.nonatomic.assembly-template.tests.editmode][AssemblyTemplate.Tests.EditMode.TemplateDeserializationTests][suite]
+    m_ResultText: com.nonatomic.assembly-template.tests.editmode.dll (0.099s)
     m_ResultStacktrace: 
     m_TestListState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 
-      m_LastClickedID: 0
-      m_ExpandedIDs: a354a0991aea22c356e70fe1de3cd32aafb7515b0e719a66ffffff7f
+      m_SelectedIDs: dc7b6b63
+      m_LastClickedID: 1667988444
+      m_ExpandedIDs: a354a0996cd6439ed3b8bcac1aea22c356e70fe1c8381d27de3cd32a45ee8132afb7515bdc7b6b630e719a66ffffff7f
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -1627,10 +1784,10 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 8
-    y: 81
-    width: 985
-    height: 750
+    x: 0
+    y: 73
+    width: 990
+    height: 759
   m_ViewDataDictionary: {fileID: 0}
   m_OverlayCanvas:
     m_LastAppliedPresetName: Default
@@ -1666,7 +1823,7 @@ MonoBehaviour:
     m_VAllowExceedBaseRangeMax: 1
     m_ScaleWithWindow: 0
     m_HSlider: 0
-    m_VSlider: 1
+    m_VSlider: 0
     m_IgnoreScrollWheelUntilClicked: 0
     m_EnableMouseInput: 1
     m_EnableSliderZoomHorizontal: 0
@@ -1677,23 +1834,23 @@ MonoBehaviour:
       serializedVersion: 2
       x: 0
       y: 21
-      width: 985
-      height: 729
-    m_Scale: {x: 0.36054173, y: 0.36054173}
-    m_Translation: {x: 492.5, y: 364.5}
+      width: 990
+      height: 738
+    m_Scale: {x: 0.36035156, y: 0.36035156}
+    m_Translation: {x: 495, y: 369}
     m_MarginLeft: 0
     m_MarginRight: 0
     m_MarginTop: 0
     m_MarginBottom: 0
     m_LastShownAreaInsideMargins:
       serializedVersion: 2
-      x: -1366
-      y: -1010.9787
-      width: 2732
-      height: 2021.9574
+      x: -1373.6586
+      y: -1024
+      width: 2747.3171
+      height: 2048
     m_MinimalGUI: 1
-  m_defaultScale: 0.36054173
-  m_LastWindowPixelSize: {x: 985, y: 750}
+  m_defaultScale: 0.36035156
+  m_LastWindowPixelSize: {x: 990, y: 759}
   m_ClearInEditMode: 1
   m_NoCameraWarning: 1
   m_LowResolutionForAspectRatios: 01000001000000000000
@@ -2138,10 +2295,10 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 8
-    y: 852
-    width: 469
-    height: 491
+    x: 0
+    y: 853
+    width: 1068
+    height: 498
   m_ViewDataDictionary: {fileID: 0}
   m_OverlayCanvas:
     m_LastAppliedPresetName: Default
@@ -2159,22 +2316,22 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Packages
+    - Packages/com.nonatomic.assembly-template/Tests/EditMode
     m_Globs: []
     m_OriginalText: 
   m_ViewMode: 1
   m_StartGridSize: 16
   m_LastFolders:
-  - Packages
+  - Packages/com.nonatomic.assembly-template/Tests/EditMode
   m_LastFoldersGridSize: 16
   m_LastProjectPath: D:\Repos\AssemblyTemplate
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: ffffff7f
-    m_LastClickedID: 2147483647
-    m_ExpandedIDs: 00000000ca690000cc690000ce690000d0690000d2690000d4690000d6690000d8690000da690000dc690000ffffff7f
+    m_SelectedIDs: 946b0000
+    m_LastClickedID: 27540
+    m_ExpandedIDs: 00000000e6690000e8690000ea690000ec690000ee690000f0690000f2690000f4690000f6690000f86900006a6b0000ffffff7f
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -2202,7 +2359,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000ca690000cc690000ce690000d0690000d2690000d4690000d6690000d8690000da690000dc690000
+    m_ExpandedIDs: 00000000e6690000e8690000ea690000ec690000ee690000f0690000f2690000f4690000f6690000f8690000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -2229,7 +2386,7 @@ MonoBehaviour:
   m_ListAreaState:
     m_SelectedInstanceIDs: 
     m_LastClickedInstanceID: 0
-    m_HadKeyboardFocusLastEvent: 0
+    m_HadKeyboardFocusLastEvent: 1
     m_ExpandedInstanceIDs: c623000010650000ec7b00001e8f0000e4141d007477000002620000bc8b0000f6eb0000eceb00002aa70000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -2257,7 +2414,7 @@ MonoBehaviour:
     m_ScrollPosition: {x: 0, y: 0}
     m_GridSize: 16
   m_SkipHiddenPackages: 0
-  m_DirectoriesAreaWidth: 186
+  m_DirectoriesAreaWidth: 185
 --- !u!114 &31
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -2278,10 +2435,10 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 478
-    y: 852
-    width: 289
-    height: 491
+    x: 1069
+    y: 853
+    width: 198
+    height: 498
   m_ViewDataDictionary: {fileID: 0}
   m_OverlayCanvas:
     m_LastAppliedPresetName: Default
@@ -2291,7 +2448,7 @@ MonoBehaviour:
       scrollPos: {x: 0, y: 0}
       m_SelectedIDs: 
       m_LastClickedID: 0
-      m_ExpandedIDs: 28fbffff
+      m_ExpandedIDs: e4eaffff4cebffff64ecffffc2ecffff16fbffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -2366,10 +2523,10 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 769
-    y: 852
-    width: 849
-    height: 491
+    x: 1269
+    y: 853
+    width: 348
+    height: 498
   m_ViewDataDictionary: {fileID: 0}
   m_OverlayCanvas:
     m_LastAppliedPresetName: Default
@@ -2431,10 +2588,10 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 2144
-    y: 81
-    width: 1287
-    height: 1262
+    x: 2146
+    y: 73
+    width: 1293
+    height: 1278
   m_ViewDataDictionary: {fileID: 0}
   m_OverlayCanvas:
     m_LastAppliedPresetName: Default

@@ -45,8 +45,8 @@ namespace AssemblyTemplate.Editor
 			_templatePathField = rootVisualElement.Q<TextField>("TemplatePath");
 			_templatePathField.value = _templatePath;
 				
-			_assemblyNameField = rootVisualElement.Q<TextField>("AssemblyNameKey");
-			_assemblyDomainField = rootVisualElement.Q<TextField>("AssemblyDomainKey");
+			_assemblyNameField = rootVisualElement.Q<TextField>("AssemblyName");
+			_assemblyDomainField = rootVisualElement.Q<TextField>("AssemblyDomain");
 		}
 
 		private void InitButtons()
