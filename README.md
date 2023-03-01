@@ -1,3 +1,6 @@
+# Installation
+In order to install this package via Unitys Package Manager select "Add package from git URL" and enter https://github.com/NonatomicTeam/AssemblyTemplate.git?path=Packages/com.nonatomic.assembly-template
+
 # Project Background
 This started out as a little project to simplify and speed up the process of creating a new assembly within the Unity Editor as they follow as pretty consistent pattern. 
 
