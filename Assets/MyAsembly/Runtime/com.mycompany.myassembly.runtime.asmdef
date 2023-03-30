@@ -1,0 +1,14 @@
+{
+  "name": "com.mycompany.myassembly.runtime",
+  "rootNamespace": "MyAsembly",
+  "references": [],
+  "includePlatforms": [],
+  "excludePlatforms": [],
+  "allowUnsafeCode": false,
+  "overrideReferences": true,
+  "precompiledReferences": [],
+  "autoReferenced": true,
+  "defineConstraints": [],
+  "versionDefines": [],
+  "noEngineReferences": false
+}
