@@ -1,7 +1,7 @@
 {
   "name": "com.nonatomic.assembly-template",
   "displayName": "Assembly Template",
-  "version": "0.2.2",
+  "version": "0.3.0",
   "description": "Create assemblies from a template",
   "keywords": [
     "Assembly",
