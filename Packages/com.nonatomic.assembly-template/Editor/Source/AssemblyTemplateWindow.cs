@@ -1,10 +1,11 @@
 ﻿using System.IO;
+using AssemblyTemplate.Editor;
 using Newtonsoft.Json;
 using UnityEditor;
 using UnityEngine;
 using UnityEngine.UIElements;
 
-namespace AssemblyTemplate.Editor
+namespace AssemblyTemplate.Tests.Editor.Editor.Source
 {
 	public class AssemblyTemplateWindow : EditorWindow
 	{
@@ -76,77 +77,14 @@ namespace AssemblyTemplate.Editor
 			var selectedDirectory = AssetDatabase.GetAssetPath(Selection.activeObject);
 			if (!AssetDatabase.IsValidFolder(selectedDirectory)) return;
 			
-			CreateRecursiveSubDirectories(selectedDirectory, _template.Root);
+			TemplateGenerator.Generate(selectedDirectory, _assemblyNameField.value, string.Empty, _assemblyDomainField.value, _template);
 		}
 		
-		private void CreateRecursiveSubDirectories(string path, DirectoryTemplate directory)
-		{
-			var directoryName = ProcessName(directory.Name);
-			var childPath = CreateDirectory(path, directoryName);
-			CreateAsmdefFile(childPath, directory);
-			
-			foreach(var file in directory.Files)
-			{
-				CreateFile(childPath, file);
-			}
-
-			foreach(var child in directory.Children)
-			{
-				CreateRecursiveSubDirectories(childPath, child);
-			}
-		}
-
-		private string ProcessName(string value)
-		{
-			value = value.Replace(AssemblyNameKey, _assemblyNameField.value);
-			value = value.Replace(AssemblyDomainKey, _assemblyDomainField.value);
-
-			return value;
-		}
-
-		private string ProcessContent(string value)
-		{
-			value = ProcessName(value);
-
-			return value;
-		}
-
 		private void LoadTemplate()
 		{
 			var path = _templatePathField.value;
 			var json = File.ReadAllText(path);
 			_template = JsonConvert.DeserializeObject<DirectoryStructureTemplateSO>(json);
-		}
-
-		private string CreateDirectory(string path, string name)
-		{
-			var guid = AssetDatabase.CreateFolder(path, name);
-			return AssetDatabase.GUIDToAssetPath(guid);
-		}
-
-		private void CreateAsmdefFile(string path, DirectoryTemplate directory)
-		{
-			if(directory.Asmdef == null) return;
-			if (string.IsNullOrEmpty(directory.Asmdef.Name)) return;
-
-			directory.Asmdef.Name = ProcessName(directory.Asmdef.Name);
-			directory.Asmdef.RootNameSpace = ProcessName(directory.Asmdef.RootNameSpace);
-			
-			var jsonString = JsonConvert.SerializeObject(directory.Asmdef, Formatting.Indented);
-			var pathToSave = Path.Combine(path, $"{directory.Asmdef.Name}.asmdef");
-			
-			File.WriteAllText(pathToSave, jsonString);
-		}
-
-		private void CreateFile(string path, FileTemplate file)
-		{
-			if(file == null) return;
-			if (string.IsNullOrEmpty(file.Name)) return;
-			
-			file.Name = ProcessName(file.Name);
-			file.Content = ProcessContent(file.Content);
-			var pathToSave = Path.Combine(path, $"{file.Name}");
-			File.WriteAllText(pathToSave,  file.Content);
 		}
 	}
 }

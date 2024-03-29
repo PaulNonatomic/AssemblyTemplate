@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using AssemblyTemplate.Tests.Editor.Editor.Source;
 using Newtonsoft.Json;
 
 namespace AssemblyTemplate.Editor
@@ -18,5 +19,8 @@ namespace AssemblyTemplate.Editor
 		
 		[JsonProperty("files")]
 		public List<FileTemplate> Files = new ();
+		
+		[JsonProperty("assets")]
+		public List<AssetTemplate> Assets = new ();
 	}
 }
