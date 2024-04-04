@@ -76,7 +76,6 @@ namespace AssemblyTemplate.Editor
 			
 			var jsonString = JsonConvert.SerializeObject(directory.Asmdef, Formatting.Indented);
 			var pathToSave = Path.Combine(path, $"{directory.Asmdef.Name}.asmdef");
-			
 			File.WriteAllText(pathToSave, jsonString);
 		}
 
