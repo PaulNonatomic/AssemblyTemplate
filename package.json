@@ -1,0 +1,23 @@
+{
+  "name": "com.nonatomic.assemblygen",
+  "displayName": "AssemblyGen",
+  "version": "0.3.0",
+  "description": "Generates assemblies from a template",
+  "keywords": [
+    "Assembly",
+    "Template",
+    "unity"
+  ],
+  "repository" : {
+    "type" : "git",
+    "url" : "git@github.com:NonatomicTeam/AssemblyTemplate.git"
+  },
+  "author": {
+    "name" : "Nonatomic",
+    "email" : "paul@nonatomic.co.uk",
+    "url" : "https://nonatomic.co.uk"
+  },
+  "dependencies" : {
+    "com.unity.nuget.newtonsoft-json": "3.0.2"
+  }
+}
