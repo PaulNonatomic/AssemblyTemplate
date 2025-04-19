@@ -1,3 +1,7 @@
+# *********
+# DEPRECATED - Use the new [ScaffoldKit](https://github.com/PaulNonatomic/ScaffoldKit) instead
+# *********
+
 # Installation
 In order to install this package via Unitys Package Manager select "Add package from git URL" and enter https://github.com/NonatomicTeam/AssemblyTemplate.git?path=Packages/com.nonatomic.assembly-template
 
